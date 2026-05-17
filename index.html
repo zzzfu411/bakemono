@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BK｜怪物物语</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="pre-game">
+    <div id="stage" class="stage" data-current="memory">
+      <div class="scene-stack" aria-hidden="true">
+        <figure class="scene is-active" id="bg-vertical">
+          <img src="/assets/backgrounds/bg-01-grey-city.png" alt="" />
+        </figure>
+        <figure class="scene" id="bg-horizontal">
+          <img src="/assets/backgrounds/bg-03-noir-city.png" alt="" />
+        </figure>
+      </div>
+      <div class="atmosphere" aria-hidden="true"></div>
+
+      <div id="game-container" class="game-layer">
+        <canvas id="game-canvas"></canvas>
+
+        <div id="ui-overlay">
+          <div class="top-bar">
+            <div class="stat-cluster left">
+              <div class="stat-box hp-box">
+                <img class="stat-ico" src="/assets/hud/heart.png" alt="" />
+                <span id="ui-hp">10</span>/<span id="ui-hp-max">10</span>
+              </div>
+              <div class="stat-box level-box">
+                <img class="stat-ico" src="/assets/hud/xp.png" alt="" />
+                <span class="level-text">Lv <b id="ui-level">1</b></span>
+                <div class="xp-bar"><div id="ui-xp" class="xp-fill"></div></div>
+              </div>
+            </div>
+            <div class="stat-cluster center">
+              <div class="stat-box area-box">
+                <img class="stat-ico" src="/assets/hud/area-flag.png" alt="" />
+                <span id="ui-area">巨木薄林</span> · <span id="ui-room">房间 1 / 10</span>
+              </div>
+              <div class="stat-box bosspct-box">
+                <img class="stat-ico" src="/assets/hud/boss-warning.png" alt="" />
+                Boss <span id="ui-bosspct">0%</span>
+              </div>
+            </div>
+            <div class="stat-cluster right">
+              <div class="stat-box money-box">
+                <img class="stat-ico" src="/assets/hud/coin.png" alt="" />
+                <span id="ui-money">0</span>
+              </div>
+              <div class="stat-box risk-box">
+                <img id="ui-risk-icon" class="stat-ico" src="/assets/hud/anchor.png" alt="" />
+                原地重生 <span id="ui-risk">30</span>%
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-bar">
+            <div class="bottom-left">
+              <div class="mode-indicator" id="ui-mode">纵平面（横版动作）</div>
+              <div class="weapon-panel">
+                <img class="weapon-icon" id="ui-weapon-icon" src="/assets/weapons/sword.png" alt="" />
+                <div class="weapon-body">
+                  <div class="weapon-head">
+                    <span class="weapon-name" id="ui-weapon-name">墨刃</span>
+                    <span class="weapon-kind-tag" id="ui-weapon-kind">近战</span>
+                  </div>
+                  <div class="weapon-stats">
+                    <div>普攻：<b id="ui-weapon-dps-primary">8 / 0.42s</b></div>
+                    <div>DPS：<b id="ui-weapon-dps">0</b></div>
+                  </div>
+                  <div class="weapon-special-row">
+                    <span id="ui-weapon-special-name">Q · 墨突斩</span>
+                  </div>
+                  <div class="weapon-special-desc" id="ui-weapon-special">突进攻击</div>
+                  <div class="cd-bar"><div id="ui-qcd" class="cd-fill"></div></div>
+                  <div class="cd-label">R 切换武器</div>
+                </div>
+              </div>
+            </div>
+            <div class="stigma-container">
+              <div class="stigma-label">圣痕热度（按 E 展开/坍缩）</div>
+              <div class="stigma-snake">
+                <img class="stigma-snake-base" src="/assets/hud/stigma-snake-base.png" alt="" />
+                <div class="stigma-snake-mask" id="ui-stigma-mask">
+                  <img src="/assets/hud/stigma-snake-base.png" alt="" />
+                </div>
+                <img class="stigma-snake-head" id="ui-stigma-head" src="/assets/hud/stigma-snake-head.png" alt="" />
+              </div>
+              <div class="stigma-bar-bg fallback-bar">
+                <div class="stigma-bar-fill" id="ui-stigma"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="banner" class="banner hidden"></div>
+
+          <div id="choice-screen" class="hidden modal modal-wide">
+            <h1 id="choice-title">选择</h1>
+            <div id="choice-list" class="choice-list"></div>
+            <p class="hint">按 1 / 2 / 3 选择，或鼠标点击</p>
+          </div>
+
+          <div id="shop-screen" class="hidden modal modal-wide shop-modal">
+            <header class="shop-head">
+              <h1>商店 · 余墨堂</h1>
+              <div class="shop-money-line">
+                <img src="/assets/hud/coin.png" alt="" class="shop-coin" />
+                持有 <b id="shop-money">0</b>
+              </div>
+            </header>
+            <div id="shop-grid" class="shop-grid"></div>
+            <div class="modal-buttons">
+              <button id="shop-leave">离开商店 (Esc)</button>
+            </div>
+            <p class="hint">按 1-6 快速购买；不够钱的卡片会置灰</p>
+          </div>
+
+          <div id="pause-screen" class="hidden modal modal-wide pause-modal">
+            <h1>暂停 — 怪物物语 · 角色状态</h1>
+            <div id="pause-stats" class="pause-stats"></div>
+            <h2 class="inv-title">已携带道具</h2>
+            <div id="pause-items" class="pause-items"></div>
+            <div class="modal-buttons">
+              <button id="btn-resume">继续游戏 (Esc)</button>
+              <button id="btn-quit" class="btn-danger">放弃本局（视为死亡）</button>
+            </div>
+          </div>
+
+          <div id="death-screen" class="hidden modal death-modal">
+            <div class="resurrect-altar-wrap">
+              <img id="resurrect-altar" class="resurrect-altar" src="/assets/hud/resurrect-altar.png" alt="" />
+              <canvas id="resurrect-fx" class="resurrect-fx" width="320" height="320"></canvas>
+            </div>
+            <h1 id="death-title">原地重生判定</h1>
+            <p id="death-subtitle">坐标锚正在缝合你的影身轮廓...</p>
+            <div id="death-dice-result" class="dice-result"></div>
+            <div class="modal-buttons">
+              <button id="btn-restart" class="hidden">继续</button>
+              <button id="btn-wipe" class="hidden btn-danger">重开</button>
+            </div>
+          </div>
+
+          <div class="help-hint">WASD 移动 · 空格 冲刺 · 鼠标 普攻 · Q 特殊技 · E 展开 · R 换武器 · Esc 暂停 / 属性</div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-05-17",
+  "sourceDirectory": "D:\\Develop\\Gemini\\rougett\\GameStart\\assets\\generated-sources\\2026-05-17",
+  "style": "anime yokai noir ink sketch, black and white with red accents",
+  "chromaKeySource": "#ff00ff",
+  "sheets": {
+    "boss": {
+      "stagking": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 600,
+        "frameHeight": 600
+      },
+      "chimekeeper": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 600,
+        "frameHeight": 600
+      },
+      "mourner": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 600,
+        "frameHeight": 600
+      },
+      "cathedra": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 600,
+        "frameHeight": 600
+      }
+    },
+    "weaponEffects": {
+      "sword": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      },
+      "spear": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      },
+      "bow": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      },
+      "staff": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      },
+      "chakram": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      },
+      "bell": {
+        "cols": 4,
+        "rows": 2,
+        "frameWidth": 448,
+        "frameHeight": 448
+      }
+    },
+    "foldOpen": {
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 1920,
+      "frameHeight": 1080
+    },
+    "foldClose": {
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 1920,
+      "frameHeight": 1080
+    }
+  },
+  "icons": {
+    "weapons": [
+      "sword",
+      "spear",
+      "bow",
+      "staff",
+      "chakram",
+      "bell"
+    ],
+    "items": [
+      "heavy_armor",
+      "sword_scroll",
+      "far_string",
+      "burning_nail",
+      "broken_sigil",
+      "shadow_shard",
+      "fold_sheath",
+      "ash_bell",
+      "cursed_pact",
+      "crit_tag",
+      "shoes",
+      "extra_dash",
+      "wide_arm",
+      "magnet"
+    ],
+    "hud": [
+      "heart",
+      "xp-seal",
+      "area-flag",
+      "boss-warning",
+      "coin",
+      "anchor"
+    ],
+    "treasure": [
+      "relic",
+      "altar_anchor",
+      "flesh_pact",
+      "stigma_offering",
+      "burn_pyre",
+      "curse_bloom",
+      "blood_trial"
+    ]
+  },
+  "obstacles": [
+    "forest-stump.png",
+    "forest-stump-2.png",
+    "forest-stump-3.png",
+    "clocktower-slab.png",
+    "clocktower-pillar.png",
+    "cathedral-chain.png",
+    "graveyard-stone.png",
+    "graveyard-stone-2.png",
+    "graveyard-stone-3.png"
+  ],
+  "backgrounds": [
+    "bg-04-cathedral-vertical.png",
+    "bg-04-cathedral-noir.png"
+  ]
+}

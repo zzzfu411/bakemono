@@ -1,0 +1,487 @@
+{
+  "generatedAt": "2026-05-17",
+  "style": "anime yokai noir ink sketch, black and white with red accents",
+  "chromaKeySource": "#ff00ff",
+  "sourceDirectory": "D:\\Develop\\Gemini\\rougett\\GameStart\\assets\\generated-sources\\2026-05-17",
+  "spriteSheets": {
+    "player": {
+      "path": "assets/sprites/generated/player-noir-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 444,
+      "frameHeight": 444,
+      "frames": [
+        "idle",
+        "walk-1",
+        "walk-2",
+        "walk-3",
+        "sword-windup",
+        "sword-impact",
+        "sword-follow-through",
+        "dash"
+      ]
+    },
+    "crabYokai": {
+      "path": "assets/sprites/generated/crab-yokai-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 444,
+      "frameHeight": 444,
+      "frames": [
+        "idle",
+        "walk-1",
+        "walk-2",
+        "walk-3",
+        "guard-start",
+        "guard-full",
+        "block-impact",
+        "guard-release"
+      ]
+    },
+    "clawYokai": {
+      "path": "assets/sprites/generated/claw-yokai-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 444,
+      "frameHeight": 444,
+      "frames": [
+        "idle",
+        "walk-1",
+        "walk-2",
+        "walk-3",
+        "attack-windup",
+        "claw-impact",
+        "recovery",
+        "lunge"
+      ]
+    },
+    "snakeYokai": {
+      "path": "assets/sprites/generated/snake-yokai-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 444,
+      "frameHeight": 444,
+      "frames": [
+        "idle",
+        "slither-1",
+        "slither-2",
+        "slither-3",
+        "poison-windup",
+        "poison-launch",
+        "recoil",
+        "hiss"
+      ]
+    },
+    "stagkingBoss": {
+      "path": "assets/sprites/generated/stagking-boss-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "frames": [
+        "idle",
+        "step-1",
+        "step-2",
+        "step-3",
+        "root-windup",
+        "antler-impact",
+        "stagger",
+        "roar"
+      ]
+    },
+    "chimekeeperBoss": {
+      "path": "assets/sprites/generated/chimekeeper-boss-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "frames": [
+        "idle",
+        "float-1",
+        "float-2",
+        "float-3",
+        "bell-windup",
+        "sound-impact",
+        "recovery",
+        "summon"
+      ]
+    },
+    "mournerBoss": {
+      "path": "assets/sprites/generated/mourner-boss-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "frames": [
+        "idle",
+        "drift-1",
+        "drift-2",
+        "drift-3",
+        "veil-windup",
+        "tear-impact",
+        "recovery",
+        "wail"
+      ]
+    },
+    "cathedraBoss": {
+      "path": "assets/sprites/generated/cathedra-boss-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 600,
+      "frameHeight": 600,
+      "frames": [
+        "idle",
+        "hover-1",
+        "hover-2",
+        "hover-3",
+        "organ-windup",
+        "pillar-impact",
+        "recovery",
+        "judgement"
+      ]
+    }
+  },
+  "effectSheets": {
+    "yokaiAttacks": {
+      "path": "assets/effects/generated/yokai-attack-effects-spritesheet.png",
+      "cols": 4,
+      "rows": 3,
+      "frameWidth": 384,
+      "frameHeight": 342,
+      "notes": {
+        "row0": "crab defense and block",
+        "row1": "claw melee slash",
+        "row2": "snake poison projectile and splash"
+      }
+    },
+    "weaponSword": {
+      "path": "assets/effects/generated/weapon-sword-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "weaponSpear": {
+      "path": "assets/effects/generated/weapon-spear-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "weaponBow": {
+      "path": "assets/effects/generated/weapon-bow-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "weaponStaff": {
+      "path": "assets/effects/generated/weapon-staff-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "weaponChakram": {
+      "path": "assets/effects/generated/weapon-chakram-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "weaponBell": {
+      "path": "assets/effects/generated/weapon-bell-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 448,
+      "frameHeight": 448
+    },
+    "foldOpen": {
+      "path": "assets/effects/fold-open-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 1920,
+      "frameHeight": 1080
+    },
+    "foldClose": {
+      "path": "assets/effects/fold-close-spritesheet.png",
+      "cols": 4,
+      "rows": 2,
+      "frameWidth": 1920,
+      "frameHeight": 1080
+    }
+  },
+  "backgrounds": {
+    "cathedralVertical": {
+      "path": "assets/backgrounds/bg-04-cathedral-vertical.png",
+      "width": 1920,
+      "height": 1080
+    },
+    "cathedralNoir": {
+      "path": "assets/backgrounds/bg-04-cathedral-noir.png",
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "obstacles": {
+    "stump": {
+      "path": "assets/obstacles/forest-stump.png",
+      "width": 200,
+      "height": 120
+    },
+    "stumpAlt": {
+      "path": "assets/obstacles/forest-stump-2.png",
+      "width": 200,
+      "height": 120
+    },
+    "stumpSmall": {
+      "path": "assets/obstacles/forest-stump-3.png",
+      "width": 200,
+      "height": 120
+    },
+    "floaterSlab": {
+      "path": "assets/obstacles/clocktower-slab.png",
+      "width": 200,
+      "height": 40
+    },
+    "floaterPillar": {
+      "path": "assets/obstacles/clocktower-pillar.png",
+      "width": 100,
+      "height": 400
+    },
+    "chain": {
+      "path": "assets/obstacles/cathedral-chain.png",
+      "width": 600,
+      "height": 24
+    },
+    "tombstone": {
+      "path": "assets/obstacles/graveyard-stone.png",
+      "width": 60,
+      "height": 120
+    },
+    "tombstoneAlt": {
+      "path": "assets/obstacles/graveyard-stone-2.png",
+      "width": 50,
+      "height": 100
+    },
+    "tombstoneSmall": {
+      "path": "assets/obstacles/graveyard-stone-3.png",
+      "width": 40,
+      "height": 80
+    }
+  },
+  "icons": {
+    "weapons": {
+      "sword": {
+        "path": "assets/weapons/sword.png",
+        "width": 64,
+        "height": 64
+      },
+      "spear": {
+        "path": "assets/weapons/spear.png",
+        "width": 64,
+        "height": 64
+      },
+      "bow": {
+        "path": "assets/weapons/bow.png",
+        "width": 64,
+        "height": 64
+      },
+      "staff": {
+        "path": "assets/weapons/staff.png",
+        "width": 64,
+        "height": 64
+      },
+      "chakram": {
+        "path": "assets/weapons/chakram.png",
+        "width": 64,
+        "height": 64
+      },
+      "bell": {
+        "path": "assets/weapons/bell.png",
+        "width": 64,
+        "height": 64
+      }
+    },
+    "items": {
+      "heavy_armor": {
+        "path": "assets/items/heavy_armor.png",
+        "width": 64,
+        "height": 64
+      },
+      "sword_scroll": {
+        "path": "assets/items/sword_scroll.png",
+        "width": 64,
+        "height": 64
+      },
+      "far_string": {
+        "path": "assets/items/far_string.png",
+        "width": 64,
+        "height": 64
+      },
+      "burning_nail": {
+        "path": "assets/items/burning_nail.png",
+        "width": 64,
+        "height": 64
+      },
+      "broken_sigil": {
+        "path": "assets/items/broken_sigil.png",
+        "width": 64,
+        "height": 64
+      },
+      "shadow_shard": {
+        "path": "assets/items/shadow_shard.png",
+        "width": 64,
+        "height": 64
+      },
+      "fold_sheath": {
+        "path": "assets/items/fold_sheath.png",
+        "width": 64,
+        "height": 64
+      },
+      "ash_bell": {
+        "path": "assets/items/ash_bell.png",
+        "width": 64,
+        "height": 64
+      },
+      "cursed_pact": {
+        "path": "assets/items/cursed_pact.png",
+        "width": 64,
+        "height": 64
+      },
+      "crit_tag": {
+        "path": "assets/items/crit_tag.png",
+        "width": 64,
+        "height": 64
+      },
+      "shoes": {
+        "path": "assets/items/shoes.png",
+        "width": 64,
+        "height": 64
+      },
+      "extra_dash": {
+        "path": "assets/items/extra_dash.png",
+        "width": 64,
+        "height": 64
+      },
+      "wide_arm": {
+        "path": "assets/items/wide_arm.png",
+        "width": 64,
+        "height": 64
+      },
+      "magnet": {
+        "path": "assets/items/magnet.png",
+        "width": 64,
+        "height": 64
+      }
+    },
+    "hud": {
+      "heart": {
+        "path": "assets/hud/heart.png",
+        "width": 16,
+        "height": 16
+      },
+      "xp": {
+        "path": "assets/hud/xp.png",
+        "width": 16,
+        "height": 16
+      },
+      "area": {
+        "path": "assets/hud/area.png",
+        "width": 16,
+        "height": 16
+      },
+      "boss": {
+        "path": "assets/hud/boss.png",
+        "width": 16,
+        "height": 16
+      },
+      "money": {
+        "path": "assets/hud/money.png",
+        "width": 16,
+        "height": 16
+      },
+      "risk": {
+        "path": "assets/hud/risk.png",
+        "width": 16,
+        "height": 16
+      }
+    },
+    "cards": {
+      "combat": {
+        "path": "assets/cards/levelup-combat.png",
+        "width": 240,
+        "height": 180
+      },
+      "survive": {
+        "path": "assets/cards/levelup-survive.png",
+        "width": 240,
+        "height": 180
+      },
+      "fold": {
+        "path": "assets/cards/levelup-fold.png",
+        "width": 240,
+        "height": 180
+      },
+      "econ": {
+        "path": "assets/cards/levelup-econ.png",
+        "width": 240,
+        "height": 180
+      }
+    },
+    "treasure": {
+      "relic": {
+        "path": "assets/treasure/relic.png",
+        "width": 48,
+        "height": 48
+      },
+      "altar_anchor": {
+        "path": "assets/treasure/altar_anchor.png",
+        "width": 48,
+        "height": 48
+      },
+      "flesh_pact": {
+        "path": "assets/treasure/flesh_pact.png",
+        "width": 48,
+        "height": 48
+      },
+      "stigma_offering": {
+        "path": "assets/treasure/stigma_offering.png",
+        "width": 48,
+        "height": 48
+      },
+      "burn_pyre": {
+        "path": "assets/treasure/burn_pyre.png",
+        "width": 48,
+        "height": 48
+      },
+      "curse_bloom": {
+        "path": "assets/treasure/curse_bloom.png",
+        "width": 48,
+        "height": 48
+      },
+      "blood_trial": {
+        "path": "assets/treasure/blood_trial.png",
+        "width": 48,
+        "height": 48
+      }
+    }
+  },
+  "hudArt": {
+    "stigmaSnakeBase": {
+      "path": "assets/hud/stigma-snake-base.png",
+      "width": 300,
+      "height": 40
+    },
+    "stigmaSnakeMask": {
+      "path": "assets/hud/stigma-snake-mask.png",
+      "width": 300,
+      "height": 40
+    },
+    "stigmaSnakeHead": {
+      "path": "assets/hud/stigma-snake-head.png",
+      "width": 32,
+      "height": 32
+    }
+  }
+}

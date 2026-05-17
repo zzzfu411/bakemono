@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-17",
+  "source": "BG/????.md section 7.5",
+  "assets": [
+    "shop/shopkeeper-spritesheet.png",
+    "shop/shop-banner.png",
+    "backgrounds/bg-05-shop-night.png",
+    "potions/blood-potion.png",
+    "potions/ninetail-pill.png",
+    "charms/buddha-bone.png",
+    "charms/wind-talisman.png",
+    "charms/iron-talisman.png",
+    "charms/cinnabar-talisman.png",
+    "charms/cloud-talisman.png",
+    "charms/fortune-talisman.png",
+    "charms/ash-talisman.png",
+    "charms/longarm-talisman.png",
+    "hud/resurrect-altar.png",
+    "effects/resurrect-success-spritesheet.png",
+    "effects/resurrect-fail-spritesheet.png",
+    "hud/anchor-fractured.png"
+  ]
+}
