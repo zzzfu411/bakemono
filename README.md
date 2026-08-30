@@ -5,6 +5,49 @@
 
 ---
 
+## 画面 / Screenshots
+
+实机截自运行中的游戏（Canvas 全屏，无浏览器框）。  
+Live captures from a running session — game view only, no browser chrome.
+
+<p align="center">
+  <img src="docs/screenshots/title.png" alt="Title screen — Bakemono Monogatari" width="900" />
+</p>
+
+<p align="center"><em>开始画面 / Title — 墨绘少女与都市剪影，点 Start 或按 Enter 开局</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/title-sunset.png" alt="Title screen, sunset atmosphere" width="900" />
+</p>
+
+<p align="center"><em>开始画面 · 黄昏氛围 / Title · sunset mood — 右下角「氛围」可切换记忆 / 黄昏 / 黑墨</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/combat-vertical.png" alt="Vertical-plane combat in the first forest room" width="900" />
+</p>
+
+<p align="center"><em>纵平面战斗 / Vertical-plane combat — 巨木薄林 · 房间 1，墨刃挥砍与蟹妖</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/stigma-unfold.png" alt="Stigma unfold transition into the dual plane" width="900" />
+</p>
+
+<p align="center"><em>妖纹展开 / Stigma unfold — 圣痕满后按 E，切到横平面的过场</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/combat-horizontal.png" alt="Horizontal dual-plane yokai-expansion combat" width="900" />
+</p>
+
+<p align="center"><em>横平面（妖纹展开）/ Dual-plane view — 俯视四向走位，网格与弹幕空间打开</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/pause-stats.png" alt="Pause screen showing full character stats" width="900" />
+</p>
+
+<p align="center"><em>暂停 · 角色状态 / Pause stats — Esc 查看 18 项属性与已携带道具</em></p>
+
+---
+
 ## 关于本作 / About
 
 《怪物物语》是一款日式妖怪题材的横版动作 roguelike：
