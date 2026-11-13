@@ -2,7 +2,7 @@
 
 A Japanese-yokai 2D action roguelike built in a 12-hour TikTok hackathon with TypeScript and HTML5 Canvas 2D—centered on switching mid-fight between side-scrolling platforming and top-down bullet-dodging at the cost of your resurrection chance.
 
-English · [简体中文](README.zh-CN.md)
+English · [简体中文](README.zh-CN.md) · [Play Online](https://zzzfu411.github.io/bakemono/)
 
 | Vertical Plane (Side-Scrolling) | Unfolded Plane (Top-Down) |
 | --- | --- |

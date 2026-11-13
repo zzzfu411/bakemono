@@ -2,7 +2,7 @@
 
 12 小时 TikTok Hackathon 期间使用 TypeScript 与原生 Canvas 2D 构建的日式妖怪动作 Roguelike：围绕横版跳跃与俯视走位的双平面切换，以及消耗原地重生概率的「妖纹展开」博弈展开。
 
-[English](README.md) · 简体中文
+[English](README.md) · 简体中文 · [在线试玩](https://zzzfu411.github.io/bakemono/)
 
 | 纵平面（横版重力作战） | 横平面（妖纹展开俯视） |
 | --- | --- |
